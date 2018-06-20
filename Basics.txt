@@ -1,0 +1,21 @@
+# Normal git
+[Working on local files]
+Open Git Bash.Go into this repository's document.
+
+git diff afile  # check the differents between origin file
+
+git add a file  		# Working -> Index. Once for one file.
+git commit -m "Notes"  	# Index -> .Git. Once for all files.
+git push origin master  # Head -> Branch 
+
+/*----Basic operation----*/ 
+# Deleting
+git rm file 		# delete file in Working
+git rm –cached file # delete file in Index, while Working remains
+git rm –f file/dir  # delete file in Index and Working
+
+# Edit a file
+touch a.txt  # Make a New file
+echo "Hello" >> a.txt # Write into the file
+cat a.txt  # Open the file
+

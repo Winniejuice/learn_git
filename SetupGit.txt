@@ -1,0 +1,29 @@
+Download the Git Bash client online:
+https://git-scm.com/downloads
+
+Open Git Bash client
+
+Setup my name and email:
+git config --global user.name "Jack"
+git config --global user.email xxx@xxx.com
+[check above settting:]
+git config --list
+
+Setup private SSH key:
+ssh-keygen -t rsa -C "xxxx@xxx.com"
+enter without password
+
+Copy lines in localPC:c/Users/you/.ssh/id_rsa.pub
+Go to github.com/account setting page/ SSH and GPG keys page
+Add New SSH key, paste the lines
+
+Back to Git Bash.Check whether SSH is success:
+ssh -T git@github.com
+
+/*Clone New repository*/
+Open github.com, make a new repository. 
+Copy this repository's SSH address: git@github.com:xxx/xxx.git
+
+Open Git Bash.
+Go into the local document.
+git clone git@github.com:xxx/xxx.git (this repository address)
